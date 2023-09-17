@@ -65,7 +65,10 @@ const config = {
                     fontSize: theme('fontSize.6xl'),
                     fontWeight: theme('fontWeight.bold'),
                 },
-                h2: { fontSize: theme('fontSize.2xl') },
+                h2: {
+                    fontSize: theme('fontSize.4xl'),
+                    fontWeight: theme('fontWeight.semibold'),
+                },
                 h3: { fontSize: theme('fontSize.xl') },
             });
         }),
