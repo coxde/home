@@ -55,6 +55,7 @@ const config = {
     content: ['./src/**/*.{html,njk,md,js}'],
     plugins: [
         require('tailwind-nord'),
+        require('daisyui'),
         plugin(function ({ addBase, theme }) {
             addBase({
                 html: {
