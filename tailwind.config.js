@@ -19,7 +19,7 @@ leading-snug: 1.375
 leading-relaxed: 1.625
 
 - Letter spacing
-tracking-tighter: -0.05em
+tracking-tight: -0.025em
 tracking-wide: 0.025em
 
 --- 02 COLORS: https://www.nordtheme.com/docs/colors-and-palettes

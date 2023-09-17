@@ -15,11 +15,11 @@
 
         <title>{{ title }}</title>
     </head>
-    <body class="w-full bg-nord0">
+    <body class="bg-nord0">
         {% include "header.njk" %}
 
-        <div class="content absolute top-0 mx-36 rounded-md bg-nord1">
-            <main class="main mt-24">{{ content | safe }}</main>
+        <div class="mx-auto my-0 w-4/5 max-w-7xl rounded-md bg-nord1">
+            <main class="pt-24">{{ content | safe }}</main>
         </div>
 
         {% include "footer.njk" %}
