@@ -4,8 +4,8 @@
     "description": "Portfolio, blog and sweet home",
     "main": "index.js",
     "scripts": {
-        "start": "rm -rf ./public && npx @11ty/eleventy --serve & npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --watch",
-        "build": "rm -rf ./public && ELEVENTY_ENV=production npx @11ty/eleventy && npx tailwindcss -i ./src/tailwind.css -o ./public/style.css --minify"
+        "start": "rm -rf ./public && npx @11ty/eleventy --serve & npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --watch",
+        "build": "rm -rf ./public && ELEVENTY_ENV=production npx @11ty/eleventy && npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --minify"
     },
     "keywords": [],
     "author": "",
