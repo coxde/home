@@ -3,41 +3,7 @@ title: 'Home'
 layout: 'base.njk'
 ---
 
-<section class="section-hero">
-    <div class="mx-8 flex flex-col items-center justify-items-center">
-        <h1 class="m-8 tracking-tight text-nord6 drop-shadow-md">
-            <span>Portfolio,<br />Blog<br />...and </span
-            ><span class="text-nord-13 underline">sweet</span
-            ><span> home.</span>
-        </h1>
-
-        <div class="m-8 flex flex-col items-center justify-items-center">
-            <div class="m-4 flex gap-6">
-                <h2 class="tracking-wide text-nord6">Hi there, I’m Luke!</h2>
-                <div class="chat chat-start relative -top-4">
-                    <div
-                        class="chat-bubble min-h-0 min-w-0 max-w-full bg-nord7 font-semibold text-nord0 drop-shadow-md"
-                    >
-                        Good morning!
-                    </div>
-                </div>
-            </div>
-
-            <p class="m-4 max-w-3xl text-xl tracking-wide text-nord4">
-                I'm a web developer who builds cool stuff. I'm also a nerd
-                interested in FOSS and have been contributing to different
-                projects. I use Arch Linux,
-                <span class="line-through decoration-nord7 decoration-2">
-                    btw</span
-                >, and self-host some websites.
-                <a class="text-nord14 underline" href="#">Get in touch!</a>
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="section-recent-blogs"></section>
-
-<section class="section-recent-projects"></section>
-
-<section class="section-recent-funs"></section>
+{% include "home/hero.njk" %}
+{% include "home/recent-blogs.njk" %}
+{% include "home/recent-fun.njk" %}
+{% include "home/recent-projects.njk" %}
