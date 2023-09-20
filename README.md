@@ -15,6 +15,7 @@
 | Tool      | Link                                                                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Framework | <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>                                                                                          |
+| Language  | <a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a>                                                                            |
 | Styling   | <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>                                                                                   |
 | Library   | <a href="https://daisyui.com/" target="_blank">daisyUI</a>                                                                                            |
 | Palette   | <a href="https://www.nordtheme.com/" target="_blank">Nord</a> + <a href="https://github.com/crumb1e/tailwind-nord/" target="_blank">Tailwind Nord</a> |
