@@ -7,7 +7,7 @@
 </p>
 
 <p>
-  The color palette is <a href="https://www.nordtheme.com/" target="_blank">Nord</a> created by <a href="https://github.com/svengreb/" target="_blank">Sven Greb</a> and the layout inspired by many fantastic web pages.
+  The color palette is <a href="https://www.nordtheme.com/" target="_blank">Nord</a> created by <a href="https://github.com/svengreb/" target="_blank">Sven Greb</a> and the layout is inspired by many fantastic websites.
 </p>
 
 ## 📚 Stack
