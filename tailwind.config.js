@@ -52,7 +52,7 @@ p-0.5 | p-1 | p-2 | p-3 | p-4 | p-6 | p-8 | p-12 | p-16 | p-20 | p-24 | p-32
 import plugin from 'tailwindcss/plugin';
 
 const config = {
-    content: ['./src/**/*.{html,njk,md,js}'],
+    content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     plugins: [
         require('tailwind-nord'),
         require('daisyui'),

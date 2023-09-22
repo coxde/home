@@ -3,7 +3,7 @@
 ## 🏡 Portfolio, blog and sweet home
 
 <p>
-  This is my personal portfolio and blog built with <a href="https://www.11ty.dev/" target="_blank">Eleventy</a> and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>.
+  This is my personal portfolio and blog built with <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>.
 </p>
 
 <p>
@@ -14,8 +14,8 @@
 
 | Tool      | Link                                                                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Framework | <a href="https://www.11ty.dev/" target="_blank">Eleventy</a>                                                                                          |
-| Language  | <a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a>                                                                            |
+| Framework | <a href="https://astro.build/" target="_blank">Astro</a>                                                                                              |
+| Language  | <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>                                                                              |
 | Styling   | <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>                                                                                   |
 | Library   | <a href="https://daisyui.com/" target="_blank">daisyUI</a>                                                                                            |
 | Palette   | <a href="https://www.nordtheme.com/" target="_blank">Nord</a> + <a href="https://github.com/crumb1e/tailwind-nord/" target="_blank">Tailwind Nord</a> |
