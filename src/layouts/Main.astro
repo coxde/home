@@ -1,8 +1,13 @@
 ---
-import '../styles/base.css';
-
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import '../styles/base.css';
+
+type Props = {
+    title: string;
+};
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +26,7 @@ import Header from '../components/Header.astro';
             rel="stylesheet"
         />
 
-        <title>Home</title>
+        <title>{title}</title>
     </head>
     <body class="bg-nord0">
         <Header />
