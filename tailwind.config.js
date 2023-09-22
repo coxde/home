@@ -70,7 +70,10 @@ const config = {
                     fontSize: theme('fontSize.4xl'),
                     fontWeight: theme('fontWeight.semibold'),
                 },
-                h3: { fontSize: theme('fontSize.xl') },
+                h3: {
+                    fontSize: theme('fontSize.3xl'),
+                    fontWeight: theme('fontWeight.semibold'),
+                },
             });
         }),
     ],

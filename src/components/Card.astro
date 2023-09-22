@@ -1,0 +1,22 @@
+---
+type Props = {
+    title: string;
+    description: string;
+    tag1: string;
+    tag2: string;
+    link: string;
+};
+
+const { title, description, tag1, tag2, link } = Astro.props;
+---
+
+<div class="card bg-nord3 drop-shadow-md">
+    <a href={link} class="card-body gap-8 p-10">
+        <h3 class="card-title text-3xl text-nord6">{title}</h3>
+        <p class="text-xl text-nord4">{description}</p>
+        <div class="card-actions justify-end">
+            <div class="badge badge-outline px-4 text-nord7">{tag1}</div>
+            <div class="badge badge-outline px-4 text-nord7">{tag2}</div>
+        </div>
+    </a>
+</div>
