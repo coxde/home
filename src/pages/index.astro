@@ -6,15 +6,17 @@ import Showcase from '../components/Showcase.astro';
 
 <Main title="Luke - Portfolio, blog and sweet home">
     <section class="section-hero">
-        <div class="mx-8 flex flex-col items-center justify-center pt-24">
-            <h1 class="m-8 tracking-tight text-nord6 drop-shadow-md">
+        <div
+            class="mx-auto flex min-h-[calc(100vh-2rem)] flex-col items-center justify-center pt-24"
+        >
+            <h1 class="mx-8 mt-8 tracking-tight text-nord6 drop-shadow-md">
                 <span>Portfolio,<br />Blog<br />...and&nbsp;</span>
                 <span class="text-nord-13 underline">sweet</span>
                 <span> home.</span>
             </h1>
 
-            <div class="m-8 flex flex-col items-center justify-center">
-                <div class="m-4 flex gap-6">
+            <div class="mx-8 mt-16 flex flex-col items-center justify-center">
+                <div class="mx-4 mt-4 flex gap-6">
                     <h2 class="tracking-wide text-nord6">
                         Hi there, I’m Luke!
                     </h2>
@@ -27,7 +29,9 @@ import Showcase from '../components/Showcase.astro';
                     </div>
                 </div>
 
-                <p class="m-4 max-w-3xl text-xl tracking-wide text-nord4">
+                <p
+                    class="mx-4 mt-12 max-w-3xl text-xl tracking-wide text-nord4"
+                >
                     I'm a web developer who builds cool stuff. I'm also a nerd
                     interested in FOSS and have been contributing to different
                     projects. I use Arch Linux,
@@ -42,10 +46,10 @@ import Showcase from '../components/Showcase.astro';
 
     <section class="section-recent-blogs">
         <div
-            class="mx-auto flex flex-row items-center justify-center gap-4 pb-12 pt-16"
+            class="mx-auto mt-36 flex flex-row items-center justify-center gap-4"
         >
             <div
-                class="mx-12 my-6 flex max-w-sm flex-col items-center justify-center gap-8"
+                class="mx-12 mt-8 flex max-w-sm flex-col items-center justify-center gap-8"
             >
                 <Card
                     title="Post 1"
@@ -94,12 +98,12 @@ import Showcase from '../components/Showcase.astro';
             </div>
 
             <div
-                class="sticky top-1/3 m-12 flex max-w-sm flex-col justify-center gap-4 self-start"
+                class="sticky top-1/3 mx-12 mt-12 flex max-w-sm flex-col justify-center gap-4 self-start"
             >
-                <h2 class="mb-4 self-center text-nord6">
+                <h2 class="self-center text-nord6">
                     <span class="text-nord15">Blog</span> Posts
                 </h2>
-                <p class="text-xl text-nord4">
+                <p class="mt-8 text-xl text-nord4">
                     Have a cup of tea or coffee, and write something in this
                     cosy place.
                 </p>
@@ -114,14 +118,14 @@ import Showcase from '../components/Showcase.astro';
     </section>
 
     <section class="section-recent-projects">
-        <div class="flex flex-col items-center justify-center">
+        <div class="mx-auto mt-36 flex flex-col items-center justify-center">
             <div class="mx-16">
                 <h2 class="text-nord6">
                     <span class="text-nord12">Projects</span> Showcase
                 </h2>
             </div>
 
-            <div class="mx-16 my-4 flex flex-col items-center justify-center">
+            <div class="mx-16 flex flex-col items-center justify-center">
                 <Showcase />
             </div>
         </div>
