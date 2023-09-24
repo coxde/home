@@ -22,7 +22,8 @@
 
 ## 💖 Credits
 
--   <a href="https://www.thvu.dev/" target="_blank">THVu</a>
+-   <a href="https://github.com/midnitefox/Nord-Theme-Ports-and-Assets/" target="_blank">Nord Theme Ports and Assets</a>
 -   <a href="https://spotlight.tailwindui.com/" target="_blank">Spencer Sharp</a>
 -   <a href="https://kuldar.com/" target="_blank">Kuldar Kalvik</a>
 -   <a href="https://joinfirefish.org/" target="_blank">Firefish</a>
+-   <a href="https://www.thvu.dev/" target="_blank">THVu</a>
