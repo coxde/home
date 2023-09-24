@@ -1,6 +1,7 @@
 ---
 import Main from '../layouts/Main.astro';
 import Card from '../components/Card.astro';
+import Showcase from '../components/Showcase.astro';
 ---
 
 <Main title="Luke - Portfolio, blog and sweet home">
@@ -41,7 +42,7 @@ import Card from '../components/Card.astro';
 
     <section class="section-recent-blogs">
         <div
-            class="mx-auto flex flex-row items-center justify-center gap-4 pt-16"
+            class="mx-auto flex flex-row items-center justify-center gap-4 pb-12 pt-16"
         >
             <div
                 class="mx-12 my-6 flex max-w-sm flex-col items-center justify-center gap-8"
@@ -112,7 +113,19 @@ import Card from '../components/Card.astro';
         </div>
     </section>
 
-    <section class="section-recent-fun"></section>
+    <section class="section-recent-projects">
+        <div class="flex flex-col items-center justify-center">
+            <div class="mx-16">
+                <h2 class="text-nord6">
+                    <span class="text-nord12">Projects</span> Showcase
+                </h2>
+            </div>
 
-    <section class="section-recent-projects"></section>
+            <div class="mx-16 my-4 flex flex-col items-center justify-center">
+                <Showcase />
+            </div>
+        </div>
+    </section>
+
+    <section class="section-recent-fun"></section>
 </Main>
