@@ -5,12 +5,24 @@ import Browser from '../components/Browser.astro';
 <div class="mx-24 mt-12"><Browser /></div>
 
 <div class="mx-4 mt-12 flex max-w-3xl flex-col gap-4">
-    <h3 class="text-nord4"><a href="#">The World’s Best Web →</a></h3>
+    <h3 class="text-nord4">
+        <a class="flex flex-row items-center gap-2" href="#"
+            >The World’s Best Web<span
+                class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-5xl"
+            ></span></a
+        >
+    </h3>
     <p class="mt-6 text-xl text-nord6">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
         consequuntur hic quis mollitia quos odit laudantium harum illo
         laboriosam, quaerat dolorum ea maiores vero ab enim suscipit aliquam
         quo!
     </p>
-    <a href="#" class="text-nord text-xl text-nord7">All Projects →</a>
+    <a
+        href="#"
+        class="text-nord flex flex-row items-center gap-1 text-xl text-nord7"
+        >All Projects<span
+            class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-3xl"
+        ></span></a
+    >
 </div>
