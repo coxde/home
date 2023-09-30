@@ -50,12 +50,14 @@ p-0.5 | p-1 | p-2 | p-3 | p-4 | p-6 | p-8 | p-12 | p-16 | p-20 | p-24 | p-32
 /** @type {import('tailwindcss').Config} */
 
 import plugin from 'tailwindcss/plugin';
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
 
 const config = {
     content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
     plugins: [
         require('tailwind-nord'),
         require('daisyui'),
+        addDynamicIconSelectors(),
         plugin(function ({ addBase, theme }) {
             addBase({
                 html: {

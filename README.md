@@ -19,6 +19,7 @@
 | Animation | <a href="https://greensock.com/gsap/" target="_blank">GSAP</a>                                                                                        |
 | Style     | <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>                                                                                   |
 | Component | <a href="https://daisyui.com/" target="_blank">daisyUI</a>                                                                                            |
+| Icon      | <a href="https://iconify.design/" target="_blank">Iconify</a>                                                                                         |
 | Palette   | <a href="https://www.nordtheme.com/" target="_blank">Nord</a> + <a href="https://github.com/crumb1e/tailwind-nord/" target="_blank">Tailwind Nord</a> |
 
 ## 💖 Credits
