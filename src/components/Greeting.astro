@@ -1,5 +1,5 @@
 ---
-// https://docs.astro.build/en/guides/client-side-scripts/#web-components-with-custom-elements
+
 ---
 
 <greeting-updater class="chat chat-start relative -top-4">
@@ -20,6 +20,7 @@
     const lateNight: string = '🦉 Wow, night owl!';
     const defaultGreeting: string = '🕓 Time is an illusion';
 
+    // https://docs.astro.build/en/guides/client-side-scripts/#web-components-with-custom-elements
     class GreetingUpdater extends HTMLElement {
         constructor() {
             super();
