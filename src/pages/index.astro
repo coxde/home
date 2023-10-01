@@ -1,6 +1,7 @@
 ---
 import Main from '../layouts/Main.astro';
 import Card from '../components/Card.astro';
+import Greeting from '../components/Greeting.astro';
 import Showcase from '../components/Showcase.astro';
 ---
 
@@ -20,13 +21,7 @@ import Showcase from '../components/Showcase.astro';
                     <h2 class="tracking-wide text-nord6">
                         Hi there, I’m Luke!
                     </h2>
-                    <div class="chat chat-start relative -top-4">
-                        <div
-                            class="chat-bubble min-h-0 min-w-0 max-w-full bg-nord7 font-semibold text-nord0 drop-shadow-md"
-                        >
-                            Good morning!
-                        </div>
-                    </div>
+                    <Greeting />
                 </div>
 
                 <p

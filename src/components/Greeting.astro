@@ -1,0 +1,45 @@
+---
+// https://docs.astro.build/en/guides/client-side-scripts/#web-components-with-custom-elements
+---
+
+<greeting-updater class="chat chat-start relative -top-4">
+    <div
+        class="chat-bubble min-h-0 min-w-0 max-w-full bg-nord7 font-semibold text-nord0 drop-shadow-md"
+    >
+        Good morning!
+    </div>
+</greeting-updater>
+
+<script>
+    let hour: number = new Date().getHours();
+    const earlyMorning: string = '🐧 Look, early bird!';
+    const morning: string = '🌄 Good morning!';
+    const afternoon: string = '🍰 Good afternoon!';
+    const evening: string = '🌌 Wonderful evening!';
+    const night: string = '😴 Night night!';
+    const lateNight: string = '🦉 Wow, night owl!';
+    const defaultGreeting: string = '🕓 Time is an illusion';
+
+    class GreetingUpdater extends HTMLElement {
+        constructor() {
+            super();
+            let greetingBubble = this.querySelector('div')!;
+
+            if (hour >= 5 && hour < 7) {
+                greetingBubble.innerText = earlyMorning;
+            } else if (hour >= 7 && hour < 12) {
+                greetingBubble.innerText = morning;
+            } else if (hour >= 12 && hour < 17) {
+                greetingBubble.innerText = afternoon;
+            } else if (hour >= 17 && hour < 22) {
+                greetingBubble.innerText = evening;
+            } else if (hour >= 22 && hour < 24) {
+                greetingBubble.innerText = night;
+            } else if (hour >= 0 && hour < 5) {
+                greetingBubble.innerText = lateNight;
+            } else greetingBubble.innerText = defaultGreeting;
+        }
+    }
+
+    customElements.define('greeting-updater', GreetingUpdater);
+</script>
