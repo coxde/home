@@ -10,7 +10,9 @@ type Props = {
 const { title, description, tag1, tag2, link } = Astro.props;
 ---
 
-<div class="card bg-nord3 drop-shadow-md">
+<div
+    class="card bg-nord3 drop-shadow-md transition duration-500 hover:scale-105 hover:drop-shadow-xl"
+>
     <a href={link} class="card-body gap-8 p-10">
         <h3 class="card-title text-3xl text-nord6">{title}</h3>
         <p class="text-xl text-nord4">{description}</p>
