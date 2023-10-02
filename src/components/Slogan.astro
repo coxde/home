@@ -1,0 +1,42 @@
+---
+
+---
+
+<slogan-animation>
+    <h1 class="mx-8 mt-8 tracking-tight text-nord6 drop-shadow-md">
+        <span class="portfolio block">Portfolio,</span>
+        <span class="blog block">Blog</span>
+        <span class="inline-block">...and&nbsp;</span>
+        <span class="text-nord-13 underline">sweet</span>
+        <span class="home inline-block">&nbsp;home.</span>
+    </h1>
+</slogan-animation>
+
+<script>
+    import gsap from 'gsap';
+
+    class SloganAnimation extends HTMLElement {
+        constructor() {
+            super();
+            let portfolio = this.querySelector('.portfolio')!;
+            let blog = this.querySelector('.blog')!;
+            let home = this.querySelector('.home')!;
+
+            let tl = gsap.timeline({
+                delay: 0.5,
+                repeat: -1,
+                defaults: {
+                    duration: 1.25,
+                    repeat: 1,
+                    yoyo: true,
+                    ease: 'power4.out',
+                },
+            });
+            tl.to(portfolio, { color: '#d08770' });
+            tl.to(blog, { color: '#b48ead' });
+            tl.to(home, { color: '#a3be8c' });
+        }
+    }
+
+    customElements.define('slogan-animation', SloganAnimation);
+</script>

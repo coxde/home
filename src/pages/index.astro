@@ -3,6 +3,7 @@ import Main from '../layouts/Main.astro';
 import Card from '../components/Card.astro';
 import Greeting from '../components/Greeting.astro';
 import Showcase from '../components/Showcase.astro';
+import Slogan from '../components/Slogan.astro';
 ---
 
 <Main title="Luke - Portfolio, blog and sweet home">
@@ -10,11 +11,7 @@ import Showcase from '../components/Showcase.astro';
         <div
             class="mx-auto flex min-h-[calc(100vh-2rem)] flex-col items-center justify-center pt-24"
         >
-            <h1 class="mx-8 mt-8 tracking-tight text-nord6 drop-shadow-md">
-                <span>Portfolio,<br />Blog<br />...and&nbsp;</span>
-                <span class="text-nord-13 underline">sweet</span>
-                <span> home.</span>
-            </h1>
+            <Slogan />
 
             <div class="mx-8 mt-16 flex flex-col items-center justify-center">
                 <div class="mx-4 mt-4 flex gap-6">
