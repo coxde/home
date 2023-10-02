@@ -35,9 +35,11 @@ import Browser from '../components/Browser.astro';
     gsap.to('header', {
         scrollTrigger: {
             trigger: '.mockup-browser',
+            start: 'top bottom',
+            end: '+=300',
             scrub: true,
         },
-        y: -100,
+        // y: -100, // Poor performance
         autoAlpha: 0,
     });
 </script>
