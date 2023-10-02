@@ -26,7 +26,7 @@
     class GreetingUpdater extends HTMLElement {
         constructor() {
             super();
-            let greetingBubble = this.querySelector('div')!;
+            const greetingBubble = this.querySelector('div')!;
 
             gsap.to(greetingBubble, {
                 xPercent: 2.5,
