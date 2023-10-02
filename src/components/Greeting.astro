@@ -11,6 +11,8 @@
 </greeting-updater>
 
 <script>
+    import gsap from 'gsap';
+
     let hour: number = new Date().getHours();
     const earlyMorning: string = '🐧 Look, early bird!';
     const morning: string = '🌄 Good morning!';
@@ -25,6 +27,13 @@
         constructor() {
             super();
             let greetingBubble = this.querySelector('div')!;
+
+            gsap.to(greetingBubble, {
+                xPercent: 2.5,
+                yPercent: -25,
+                duration: 1.25,
+                delay: 0.25,
+            });
 
             if (hour >= 5 && hour < 7) {
                 greetingBubble.innerText = earlyMorning;
