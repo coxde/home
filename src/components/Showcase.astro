@@ -26,3 +26,18 @@ import Browser from '../components/Browser.astro';
         ></span></a
     >
 </div>
+
+<script>
+    import { gsap } from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('header', {
+        scrollTrigger: {
+            trigger: '.mockup-browser',
+            scrub: true,
+        },
+        y: -100,
+        autoAlpha: 0,
+    });
+</script>
