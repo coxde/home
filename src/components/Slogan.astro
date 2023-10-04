@@ -15,28 +15,17 @@
 <script>
     import { gsap } from 'gsap';
 
-    class SloganAnimation extends HTMLElement {
-        constructor() {
-            super();
-            const portfolio = this.querySelector('.portfolio')!;
-            const blog = this.querySelector('.blog')!;
-            const home = this.querySelector('.home')!;
-
-            let tl = gsap.timeline({
-                delay: 0.5,
-                repeat: -1,
-                defaults: {
-                    duration: 1.25,
-                    repeat: 1,
-                    yoyo: true,
-                    ease: 'power4.out',
-                },
-            });
-            tl.to(portfolio, { color: '#d08770' });
-            tl.to(blog, { color: '#b48ead' });
-            tl.to(home, { color: '#a3be8c' });
-        }
-    }
-
-    customElements.define('slogan-animation', SloganAnimation);
+    let tl = gsap.timeline({
+        delay: 0.5,
+        repeat: -1,
+        defaults: {
+            duration: 1.25,
+            repeat: 1,
+            yoyo: true,
+            ease: 'power4.out',
+        },
+    });
+    tl.to('.portfolio', { color: '#d08770' });
+    tl.to('.blog', { color: '#b48ead' });
+    tl.to('.home', { color: '#a3be8c' });
 </script>
