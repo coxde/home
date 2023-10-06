@@ -10,7 +10,7 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/tailwind": "^5.0.0",
+        "@astrojs/tailwind": "^5.0.1",
         "@astrojs/vercel": "^5.0.2",
         "@iconify/json": "^2.2.123",
         "@iconify/tailwind": "^0.1.3",
