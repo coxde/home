@@ -16,13 +16,18 @@ import Slogan from '../components/Slogan.astro';
             <div class="mx-8 mt-16 flex flex-col items-center justify-center">
                 <div class="mx-4 mt-4 flex gap-6">
                     <h2 class="tracking-wide text-nord6">
-                        Hi there, I’m Luke!
+                        <span class="greeting--1-1 inline-block">Hi&nbsp;</span>
+                        <span class="greeting--1-2 inline-block"
+                            >there,&nbsp;</span
+                        ><span class="greeting--1-3 inline-block"
+                            >I’m Luke!</span
+                        >
                     </h2>
                     <Greeting />
                 </div>
 
                 <p
-                    class="mx-4 mt-12 max-w-3xl text-xl tracking-wide text-nord4"
+                    class="greeting-2 mx-4 mt-12 max-w-3xl text-xl tracking-wide text-nord4"
                 >
                     I'm a web developer who builds cool stuff. I'm also a nerd
                     interested in FOSS and have been contributing to different
@@ -134,3 +139,21 @@ import Slogan from '../components/Slogan.astro';
         </div>
     </section>
 </Main>
+
+<script>
+    import { gsap } from 'gsap';
+
+    let tl = gsap.timeline({
+        delay: 0.5,
+        defaults: {
+            duration: 0.5,
+            yPercent: -25,
+            autoAlpha: 0,
+        },
+    });
+    tl.from('.greeting--1-1', {});
+    tl.from('.greeting--1-2', {});
+    tl.from('.greeting--1-3', { delay: 0.25, duration: 0.75 });
+    tl.from('.greeting-2', {});
+    tl.from('.greeting-3', { yPercent: 0, delay: 0.25, duration: 1.5 });
+</script>
