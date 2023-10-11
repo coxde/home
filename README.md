@@ -16,7 +16,7 @@
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Framework | <a href="https://astro.build/" target="_blank">Astro</a>                                                                                              |
 | Language  | <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>                                                                              |
-| Animation | <a href="https://greensock.com/gsap/" target="_blank">GSAP</a>                                                                                        |
+| Animation | <a href="https://gsap.com/" target="_blank">GSAP</a>                                                                                                  |
 | Style     | <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>                                                                                   |
 | Component | <a href="https://daisyui.com/" target="_blank">daisyUI</a>                                                                                            |
 | Icon      | <a href="https://iconify.design/" target="_blank">Iconify</a>                                                                                         |
