@@ -12,7 +12,7 @@
     "dependencies": {
         "@astrojs/tailwind": "^5.1.0",
         "@astrojs/vercel": "^6.1.1",
-        "@iconify/json": "^2.2.161",
+        "@iconify/json": "^2.2.162",
         "@iconify/tailwind": "^0.1.4",
         "astro": "^4.0.7",
         "daisyui": "^4.4.24",
