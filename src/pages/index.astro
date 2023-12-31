@@ -125,7 +125,7 @@ import Slogan from '../components/Slogan.astro';
 
     <section class="section-recent-projects">
         <div
-            class="mx-auto mt-36 flex flex-col items-center justify-center pb-24"
+            class="relative mx-auto mt-36 flex flex-col items-center justify-center pb-24"
         >
             <div class="mx-16">
                 <h2 class="text-nord6">
@@ -134,13 +134,73 @@ import Slogan from '../components/Slogan.astro';
             </div>
 
             <div class="mx-16 flex flex-col items-center justify-center">
-                <Showcase />
+                <div class="showcase">
+                    <Showcase
+                        url="https://luke-s.dev/"
+                        ,
+                        imgSrc="/img/nord-rainbow.jpg"
+                        ,
+                        imgAlt="nord-rainbow"
+                        ,
+                        title="The World’s Best Web"
+                        ,
+                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consequuntur hic quis mollitia quos odit laudantium harum illo laboriosam, quaerat dolorum ea maiores vero ab enim suscipit aliquam quo!"
+                        ,
+                        link="#"
+                    />
+                </div>
+                <div class="showcase hidden">
+                    <Showcase
+                        url="https://luke-s.dev/"
+                        ,
+                        imgSrc="/img/nord-archlinux.jpg"
+                        ,
+                        imgAlt="nord-archlinux"
+                        ,
+                        title="Arch Linux"
+                        ,
+                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perferendis dolores impedit qui optio delectus nihil adipisci dolor vel exercitationem odio pariatur?"
+                        ,
+                        link="#"
+                    />
+                </div>
+                <div class="showcase hidden">
+                    <Showcase
+                        url="https://luke-s.dev/"
+                        ,
+                        imgSrc="/img/nord-gnu-linux.jpg"
+                        ,
+                        imgAlt="nord-gnu-linux"
+                        ,
+                        title="GNU/Linux"
+                        ,
+                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga dolor consectetur dolore ipsam nihil nostrum maxime, labore sequi modi quae voluptatibus debitis ea, ipsum commodi consequatur recusandae doloremque veniam."
+                        ,
+                        link="#"
+                    />
+                </div>
             </div>
+
+            <button
+                class="prev btn btn-circle absolute left-20 top-80 border-0 bg-nord3"
+            >
+                <span
+                    class="icon-[material-symbols--arrow-back-ios-new-rounded] text-xl"
+                ></span>
+            </button>
+            <button
+                class="next btn btn-circle absolute right-20 top-80 border-0 bg-nord3"
+            >
+                <span
+                    class="icon-[material-symbols--arrow-forward-ios-rounded] text-xl"
+                ></span>
+            </button>
         </div>
     </section>
 </Main>
 
 <script>
+    // Greeting Animation
     import { gsap } from 'gsap';
 
     let tl = gsap.timeline({
@@ -156,4 +216,37 @@ import Slogan from '../components/Slogan.astro';
     tl.from('.greeting--1-3', { delay: 0.25, duration: 0.75 });
     tl.from('.greeting-2', {});
     tl.from('.greeting-3', { yPercent: 0, delay: 0.25, duration: 1.5 });
+
+    // Showcase Carousel
+    const showcases = document.getElementsByClassName('showcase');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    let showcaseIndex = 1;
+    nextBtn?.addEventListener('click', function () {
+        showcaseIndex += 1;
+        carousel(showcaseIndex);
+    });
+    prevBtn?.addEventListener('click', function () {
+        showcaseIndex -= 1;
+        carousel(showcaseIndex);
+    });
+
+    const carousel = function (i: number) {
+        // Last >> First
+        if (i > showcases.length) {
+            showcaseIndex = 1;
+        }
+        // First >> Last
+        if (i < 1) {
+            showcaseIndex = showcases.length;
+        }
+
+        // Add .hidden for each element
+        for (let x = 0; x < showcases.length; x++) {
+            showcases[x]?.classList.add('hidden');
+        }
+        // And remove . hidden for the needed element
+        showcases[showcaseIndex - 1]?.classList.remove('hidden');
+    };
 </script>
