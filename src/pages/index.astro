@@ -226,10 +226,32 @@ import Slogan from '../components/Slogan.astro';
     nextBtn?.addEventListener('click', function () {
         showcaseIndex += 1;
         carousel(showcaseIndex);
+        gsap.fromTo(
+            '.showcase',
+            {
+                opacity: 0.25,
+                duration: 1.25,
+            },
+            {
+                opacity: 1,
+                duration: 1.25,
+            },
+        );
     });
     prevBtn?.addEventListener('click', function () {
         showcaseIndex -= 1;
         carousel(showcaseIndex);
+        gsap.fromTo(
+            '.showcase',
+            {
+                opacity: 0.25,
+                duration: 1.25,
+            },
+            {
+                opacity: 1,
+                duration: 1.25,
+            },
+        );
     });
 
     const carousel = function (i: number) {
