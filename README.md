@@ -1,5 +1,8 @@
 # Home (WIP)
 
+![A screenshot of the website page](https://github.com/coxde/home/assets/63153334/83e9da19-9c05-4d58-a222-219f2e7b08f5)
+
+
 ## 🏡 Portfolio, blog and sweet home
 
 <p>
