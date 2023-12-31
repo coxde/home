@@ -20,14 +20,17 @@ const { url, imgSrc, imgAlt, title, description, link } = Astro.props;
                 <div class="input !bg-[#66738C] !pt-[2px]">{url}</div>
             </div>
             <div class="flex justify-center bg-nord0">
-                <img src={imgSrc} alt={imgAlt} />
+                <img class="brightness-90" src={imgSrc} alt={imgAlt} />
             </div>
         </div>
     </div>
 
     <div class="mx-4 mt-12 flex max-w-3xl flex-col gap-4">
         <h3 class="text-nord4">
-            <a class="flex flex-row items-center gap-2 hover:gap-4" href="#"
+            <a
+                class="flex flex-row items-center gap-2 hover:gap-4"
+                href={link}
+                target="_blank"
                 >{title}<span
                     class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-5xl"
                 ></span></a
@@ -37,7 +40,7 @@ const { url, imgSrc, imgAlt, title, description, link } = Astro.props;
             {description}
         </p>
         <a
-            href={link}
+            href="#"
             class="text-nord flex flex-row items-center gap-1 text-xl text-nord7 hover:gap-2"
             >All Projects<span
                 class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-3xl"
