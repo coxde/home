@@ -1,0 +1,32 @@
+---
+import Main from '../layouts/Main.astro';
+import Showcase from '../components/Showcase.astro';
+---
+
+<Main title="Project - Luke">
+    <section class="section-recent-projects">
+        <div class="mx-auto flex flex-col items-center justify-center py-36">
+            <div class="mx-16">
+                <h2 class="text-nord6">
+                    <span class="text-nord12">Projects</span> Showcase
+                </h2>
+            </div>
+
+            <div class="mx-16 flex flex-col items-center justify-center">
+                <Showcase
+                    url="https://coxde.github.io/website-templates/digitalcraft/"
+                    ,
+                    imgSrc="/img/digitalcraft.jpg"
+                    ,
+                    imgAlt="A screenshot of DigitalCraft website"
+                    ,
+                    title="DigitalCraft Studio"
+                    ,
+                    description="A website template for a digital design studio, built with vanilla HTML and CSS, plus an ExchangeRate API powered quote calculator."
+                    ,
+                    link="https://coxde.github.io/website-templates/digitalcraft/"
+                />
+            </div>
+        </div>
+    </section>
+</Main>

@@ -40,7 +40,7 @@ const { url, imgSrc, imgAlt, title, description, link } = Astro.props;
             {description}
         </p>
         <a
-            href="#"
+            href="/project/"
             class="text-nord flex flex-row items-center gap-1 text-xl text-nord7 hover:gap-2"
             >All Projects<span
                 class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-3xl"
@@ -48,20 +48,3 @@ const { url, imgSrc, imgAlt, title, description, link } = Astro.props;
         >
     </div>
 </div>
-
-<script>
-    import { gsap } from 'gsap';
-    import { ScrollTrigger } from 'gsap/ScrollTrigger';
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to('header', {
-        scrollTrigger: {
-            trigger: '.mockup-browser',
-            start: 'top bottom',
-            end: '+=300',
-            scrub: true,
-        },
-        // y: -100, // Poor performance
-        autoAlpha: 0,
-    });
-</script>

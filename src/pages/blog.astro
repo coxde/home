@@ -1,0 +1,85 @@
+---
+import Main from '../layouts/Main.astro';
+import Card from '../components/Card.astro';
+---
+
+<Main title="Blog - Luke">
+    <section class="section-recent-blogs">
+        <div
+            class="mx-auto flex flex-row items-center justify-center gap-4 py-36"
+        >
+            <div
+                class="mx-12 mt-8 flex max-w-sm flex-col items-center justify-center gap-8"
+            >
+                <Card
+                    title="Post 1"
+                    ,
+                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    ,
+                    tag1="Tag1"
+                    ,
+                    tag2="Tag2"
+                    ,
+                    link="#"
+                />
+                <Card
+                    title="Post 2 with lots of words"
+                    ,
+                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    ,
+                    tag1="Tag1"
+                    ,
+                    tag2="Tag2"
+                    ,
+                    link="#"
+                />
+                <Card
+                    title="Post 3 with yet another Jibber-jabber"
+                    ,
+                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    ,
+                    tag1="Tag1"
+                    ,
+                    tag2="Tag2"
+                    ,
+                    link="#"
+                />
+                <Card
+                    title="Post 4"
+                    ,
+                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                    ,
+                    tag1="Tag1"
+                    ,
+                    tag2="Tag2"
+                    ,
+                    link="#"
+                />
+            </div>
+
+            <div
+                class="sticky top-1/3 mx-12 mt-12 flex max-w-sm flex-col justify-center gap-4 self-start"
+            >
+                <h2 class="self-center text-nord6">
+                    <span class="text-nord15">Blog</span> Posts
+                </h2>
+                <p class="mt-8 text-xl text-nord4">
+                    Have a cup of tea or coffee, and write something in this
+                    cosy place.
+                </p>
+                <p
+                    class="all-small-caps text-xl text-nord7 line-through decoration-nord7"
+                >
+                    No regular update warranty of any kind.
+                </p>
+                <a
+                    href="#"
+                    class="flex flex-row items-center gap-1 text-xl text-nord7 hover:gap-2"
+                    >All Posts<span
+                        class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-3xl"
+                    ></span></a
+                >
+            </div>
+        </div>
+    </section>
+</Main>
