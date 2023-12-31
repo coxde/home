@@ -11,37 +11,39 @@ type Props = {
 const { url, imgSrc, imgAlt, title, description, link } = Astro.props;
 ---
 
-<div class="mx-24 mt-12">
-    <div class="mockup-browser max-w-2xl bg-nord3 drop-shadow-lg">
-        <div
-            class="mockup-browser-toolbar before:!opacity-80 before:!shadow-[1.4em_0_#ebcb8b,2.8em_0_#a3be8c,4.2em_0_#bf616a]"
-        >
-            <div class="input !bg-[#66738C] !pt-[2px]">{url}</div>
-        </div>
-        <div class="flex justify-center bg-nord0">
-            <img src={imgSrc} alt={imgAlt} />
+<div class="flex flex-col items-center">
+    <div class="mx-24 mt-12">
+        <div class="mockup-browser max-w-2xl bg-nord3 drop-shadow-lg">
+            <div
+                class="mockup-browser-toolbar before:!opacity-80 before:!shadow-[1.4em_0_#ebcb8b,2.8em_0_#a3be8c,4.2em_0_#bf616a]"
+            >
+                <div class="input !bg-[#66738C] !pt-[2px]">{url}</div>
+            </div>
+            <div class="flex justify-center bg-nord0">
+                <img src={imgSrc} alt={imgAlt} />
+            </div>
         </div>
     </div>
-</div>
 
-<div class="mx-4 mt-12 flex max-w-3xl flex-col gap-4">
-    <h3 class="text-nord4">
-        <a class="flex flex-row items-center gap-2 hover:gap-4" href="#"
-            >{title}<span
-                class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-5xl"
+    <div class="mx-4 mt-12 flex max-w-3xl flex-col gap-4">
+        <h3 class="text-nord4">
+            <a class="flex flex-row items-center gap-2 hover:gap-4" href="#"
+                >{title}<span
+                    class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-5xl"
+                ></span></a
+            >
+        </h3>
+        <p class="mt-2 text-xl text-nord6">
+            {description}
+        </p>
+        <a
+            href={link}
+            class="text-nord flex flex-row items-center gap-1 text-xl text-nord7 hover:gap-2"
+            >All Projects<span
+                class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-3xl"
             ></span></a
         >
-    </h3>
-    <p class="mt-2 text-xl text-nord6">
-        {description}
-    </p>
-    <a
-        href={link}
-        class="text-nord flex flex-row items-center gap-1 text-xl text-nord7 hover:gap-2"
-        >All Projects<span
-            class="icon-[material-symbols--keyboard-double-arrow-right-rounded] text-3xl"
-        ></span></a
-    >
+    </div>
 </div>
 
 <script>
