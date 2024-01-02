@@ -2,7 +2,6 @@
 
 ![A screenshot of the website page](https://github.com/coxde/home/assets/63153334/83e9da19-9c05-4d58-a222-219f2e7b08f5)
 
-
 ## 🏡 Portfolio, blog and sweet home
 
 <p>
@@ -22,7 +21,7 @@
 | Animation | <a href="https://gsap.com/" target="_blank">GSAP</a>                                                                                                  |
 | Style     | <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>                                                                                   |
 | Component | <a href="https://daisyui.com/" target="_blank">daisyUI</a>                                                                                            |
-| Icon      | <a href="https://iconify.design/" target="_blank">Iconify</a>                                                                                         |
+| Icon      | <a href="https://iconify.design/" target="_blank">Iconify</a> + <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>                   |
 | Palette   | <a href="https://www.nordtheme.com/" target="_blank">Nord</a> + <a href="https://github.com/crumb1e/tailwind-nord/" target="_blank">Tailwind Nord</a> |
 
 ## 💖 Credits
