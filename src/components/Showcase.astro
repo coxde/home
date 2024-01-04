@@ -1,4 +1,6 @@
 ---
+import { Picture } from 'astro:assets';
+
 type Props = {
     url: string;
     imgSrc: string;
@@ -20,7 +22,14 @@ const { url, imgSrc, imgAlt, title, description, link } = Astro.props;
                 <div class="input !bg-[#66738C] !pt-[2px]">{url}</div>
             </div>
             <div class="flex justify-center bg-nord0">
-                <img class="brightness-90" src={imgSrc} alt={imgAlt} />
+                <Picture
+                    class="brightness-90"
+                    src={imgSrc}
+                    alt={imgAlt}
+                    width="1024"
+                    height="576"
+                    formats={['webp', 'avif']}
+                />
             </div>
         </div>
     </div>

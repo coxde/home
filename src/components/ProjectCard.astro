@@ -1,4 +1,6 @@
 ---
+import { Picture } from 'astro:assets';
+
 type Props = {
     imgSrc: string;
     imgAlt: string;
@@ -16,7 +18,13 @@ const { imgSrc, imgAlt, title, description, link } = Astro.props;
     class="card w-80 bg-nord3 drop-shadow-md transition duration-500 hover:scale-105 hover:drop-shadow-xl"
 >
     <figure>
-        <img class="" src={imgSrc} alt={imgAlt} />
+        <Picture
+            src={imgSrc}
+            alt={imgAlt}
+            width="720"
+            height="405"
+            formats={['webp', 'avif']}
+        />
     </figure>
     <div class="card-body">
         <h4 class="card-title font-bold text-nord6">{title}</h4>
