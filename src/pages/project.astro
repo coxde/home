@@ -1,31 +1,109 @@
 ---
 import Main from '../layouts/Main.astro';
-import Showcase from '../components/Showcase.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
 <Main title="Project - Luke">
     <section class="section-recent-projects">
-        <div class="mx-auto flex flex-col items-center justify-center py-36">
+        <div class="mx-auto flex flex-col justify-center py-24">
             <div class="mx-16">
-                <h2 class="text-nord6">
-                    <span class="text-nord12">Projects</span> Showcase
-                </h2>
+                <h2 class="font-bold text-nord12">Projects</h2>
             </div>
 
-            <div class="mx-16 flex flex-col items-center justify-center">
-                <Showcase
-                    url="https://coxde.github.io/website-templates/digitalcraft/"
-                    ,
-                    imgSrc="/img/digitalcraft.jpg"
-                    ,
-                    imgAlt="A screenshot of DigitalCraft website"
-                    ,
-                    title="DigitalCraft Studio"
-                    ,
-                    description="A website template for a digital design studio, built with vanilla HTML and CSS, plus an ExchangeRate API powered quote calculator."
-                    ,
-                    link="https://coxde.github.io/website-templates/digitalcraft/"
-                />
+            <div class="mx-16 mt-4">
+                <div>
+                    <h3 class="text-nord4">The Journey of JavaScript</h3>
+                </div>
+
+                <div class="mt-12 grid grid-cols-3 gap-x-6 gap-y-12">
+                    <ProjectCard
+                        imgSrc="/img/home-banner.jpg"
+                        ,
+                        imgAlt="A banner of Home"
+                        ,
+                        title="Home"
+                        ,
+                        description="A portfolio built with Astro and Tailwind CSS."
+                        ,
+                        link="https://luke-s.vercel.app/"
+                    />
+
+                    <ProjectCard
+                        imgSrc="/img/sicbo.jpg"
+                        ,
+                        imgAlt="A screenshot of Simple Sicbo"
+                        ,
+                        title="Simple Sicbo"
+                        ,
+                        description="A simplified Sic Bo game built with vanilla JavaScript."
+                        ,
+                        link="https://coxde.github.io/Simple-Sicbo/"
+                    />
+                </div>
+            </div>
+
+            <div class="mx-16 mt-12">
+                <div>
+                    <h3 class="text-nord4">Website Templates</h3>
+                </div>
+
+                <div class="mt-12 grid grid-cols-3 gap-x-6 gap-y-12">
+                    <ProjectCard
+                        imgSrc="/img/digitalcraft-banner.jpg"
+                        ,
+                        imgAlt="A banner of DigitalCraft"
+                        ,
+                        title="DigitalCraft Studio"
+                        ,
+                        description="Multiple pages template for a digital design studio."
+                        ,
+                        link="https://coxde.github.io/website-templates/digitalcraft/"
+                    />
+
+                    <ProjectCard
+                        imgSrc="/img/greencloud-banner.jpg"
+                        ,
+                        imgAlt="A banner of Greencloud"
+                        ,
+                        title="Greencloud"
+                        ,
+                        description="Single page template for a sustainable hosting provider."
+                        ,
+                        link="https://coxde.github.io/website-templates/greencloud/"
+                    />
+
+                    <ProjectCard
+                        imgSrc="/img/omnifood-banner.jpg"
+                        ,
+                        imgAlt="A banner of Omnifood"
+                        ,
+                        title="Omnifood"
+                        ,
+                        description="Single page template for a food subscription service."
+                        ,
+                        link="https://coxde.github.io/website-templates/omnifood/"
+                    />
+                </div>
+            </div>
+
+            <div class="mx-16 mt-12">
+                <div>
+                    <h3 class="text-nord4">The Beginning</h3>
+                </div>
+
+                <div class="mt-12 grid grid-cols-3 gap-x-6 gap-y-12">
+                    <ProjectCard
+                        imgSrc="/img/freecodecamp-banner.jpg"
+                        ,
+                        imgAlt="A banner of freeCodeCamp.org"
+                        ,
+                        title="freeCodeCamp Projects"
+                        ,
+                        description="Bunch of projects on CodePen, based on freeCodeCamp courses. It all starts here."
+                        ,
+                        link="https://codepen.io/coxde/"
+                    />
+                </div>
             </div>
         </div>
     </section>

@@ -1,0 +1,25 @@
+---
+type Props = {
+    imgSrc: string;
+    imgAlt: string;
+    title: string;
+    description: string;
+    link: string;
+};
+
+const { imgSrc, imgAlt, title, description, link } = Astro.props;
+---
+
+<a
+    href={link}
+    target="_blank"
+    class="card w-80 bg-nord3 drop-shadow-md transition duration-500 hover:scale-105 hover:drop-shadow-xl"
+>
+    <figure>
+        <img class="" src={imgSrc} alt={imgAlt} />
+    </figure>
+    <div class="card-body">
+        <h4 class="card-title font-bold text-nord6">{title}</h4>
+        <p class="mt-1 text-nord4">{description}</p>
+    </div>
+</a>
