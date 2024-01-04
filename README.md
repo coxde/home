@@ -1,6 +1,6 @@
 # Home (WIP)
 
-![A screenshot of the website page](/public/img/home-banner.jpg)
+![A banner of Home](https://github.com/coxde/home/assets/63153334/ed3d1c58-a1c4-4f4e-811d-750205d47377)
 
 ## 🏡 Portfolio, blog and sweet home
 
