@@ -16,7 +16,7 @@
         "@iconify/tailwind": "^0.1.4",
         "astro": "^4.1.3",
         "daisyui": "^4.6.0",
-        "gsap": "^3.12.4",
+        "gsap": "^3.12.5",
         "tailwind-nord": "^1.3.0"
     },
     "devDependencies": {
