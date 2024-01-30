@@ -15,7 +15,7 @@
         "@iconify/json": "^2.2.176",
         "@iconify/tailwind": "^0.1.4",
         "astro": "^4.2.6",
-        "daisyui": "^4.6.0",
+        "daisyui": "^4.6.1",
         "gsap": "^3.12.5",
         "tailwind-nord": "^1.3.0"
     },
